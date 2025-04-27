@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+</head>
+<body>
+    <h1>Track Your Mood</h1>
+    <form action="/submit" method="POST">
+        <label for="mood">How do you feel today?</label><br>
+        <select name="mood" id="mood">
+            <option value="Happy">Happy</option>
+            <option value="Sad">Sad</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Angry">Angry</option>
+        </select><br><br>
+
+        <label for="journal_entry">Your Journal Entry:</label><br>
+        <textarea name="journal_entry" id="journal_entry" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <br><a href="/history">See Mood History</a>
+</body>
+</html>
